@@ -19,7 +19,7 @@ Coffee Delivery é uma página web de catálogo e compra de cafés.<br/>
 <br>
 
 <p align="center">
-  <img alt="projeto coffee delivery" src="./public/sobre.svg width="100%">
+  <img alt="projeto coffee delivery" src="./public/sobre.svg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
