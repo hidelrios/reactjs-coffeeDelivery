@@ -8,9 +8,16 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background: ${(props) => props.theme.color.background};
+    color: ${(props) => props.theme.color["base-text"]};
+
     -webkit-font-smoothing: antialiased;
   }
   body, input, textarea, button {
-    font-size: 1rem;
+    font-family: ${(props) => props.theme.font["font-family"]["roboto"]};
+    font-size: ${(props) => props.theme.font["font-size"]["textM"]};
+  }
+  button {
+    border: none;
+    cursor: pointer;
   }
 `;

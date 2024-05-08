@@ -23,7 +23,7 @@ export const theme = {
 
   font: {
     "font-family": {
-      "balloon-2": "'Balloon 2', sans-serif",
+      "baloo": "'Baloo 2', sans-serif",
       "roboto": "'Roboto', sans-serif",
     },
     "font-size": {
