@@ -1,6 +1,6 @@
 import { IconItem } from "../../components/IconItem";
-import imgBanner from "../../assets/coffee-banner.svg";
-import imgBackground from "../../assets/hero-bg.svg";
+import imgBanner from "../../../public/static/images/coffee-banner.svg";
+import imgBackground from "../../../public/static/images/hero-bg.svg";
 
 
 import {
