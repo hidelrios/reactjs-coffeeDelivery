@@ -1,7 +1,6 @@
 import { Minus, Plus } from "@phosphor-icons/react";
 import { theme } from "../../styles/theme/theme";
 import { Container } from "./styles";
-import { useState } from "react";
 
 type Props = {
   quantity: number;

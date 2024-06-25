@@ -6,10 +6,8 @@ import {
   Price,
   Title,
 } from "./styles";
-import expressoTradicional from "../../assets/expresso.svg";
 import { QuantityInput } from "../QuantityInput";
 import { ItemRemove } from "../ItemRemove";
-import { useState } from "react";
 import { useCart } from "../../hooks/useCart";
 
 type Props = {

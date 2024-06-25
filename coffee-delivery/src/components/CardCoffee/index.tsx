@@ -1,4 +1,4 @@
-import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
+import { ShoppingCart } from "@phosphor-icons/react";
 import {
   Cart,
   Coin,

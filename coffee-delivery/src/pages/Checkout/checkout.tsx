@@ -81,9 +81,6 @@ export function Checkout() {
   const {
     cart,
     checkout,
-    incrementItemQuantity,
-    decrementItemQuantity,
-    removeItem,
   } = useCart();
 
   const selectedPaymentMethod = watch('paymentMethod')

@@ -1,9 +1,7 @@
 import { IconItem } from "../../components/IconItem";
 import { Container, Info } from "./styles";
 import imgSuccess from "../../assets/success.svg";
-import { useContext } from "react";
 import { useParams } from 'react-router-dom'
-import { CartContext } from "../../contexts/CartProvider";
 import { useCart } from "../../hooks/useCart";
 export function Success() {
   const { orders } = useCart();

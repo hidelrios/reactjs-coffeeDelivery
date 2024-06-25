@@ -1,10 +1,7 @@
 import {
-  FocusEvent,
-  HTMLAttributes,
   InputHTMLAttributes,
   LegacyRef,
   forwardRef,
-  useState,
 } from "react";
 
 import { Container } from "./styles";

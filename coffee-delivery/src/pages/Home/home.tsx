@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header";
 import { IconItem } from "../../components/IconItem";
 import imgBanner from "../../assets/coffee-banner.svg";
 import imgBackground from "../../assets/hero-bg.svg";

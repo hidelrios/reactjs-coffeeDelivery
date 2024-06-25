@@ -8,7 +8,6 @@ import {
   } from 'react' 
 
 import { FieldError } from "react-hook-form";
-import { input, optional } from "zod";
 import { Box, Container, ErrorMessage } from './styles';
 
 type Props = InputHTMLAttributes<HTMLInputElement> & {
