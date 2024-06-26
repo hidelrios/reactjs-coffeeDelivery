@@ -1,5 +1,5 @@
 import { Actions, Cart, Container, Location } from "./styles";
-import Logo from "../../../public/static/images/logo.svg";
+import Logo from "/static/images/logo.svg";
 import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 import { theme } from "../../styles/theme/theme";
 import { Link } from "react-router-dom";
