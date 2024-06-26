@@ -52,7 +52,7 @@ O "Coffee Delivery" é uma página web de catálogo e compra de cafés. Ela ofer
 
 Explore a versão online do Coffee Delivery:
 
-- [Acesse o projeto online](reactjs-coffee-delivery-6est.vercel.app)
+- [Acesse o projeto online](https://reactjs-coffee-delivery-6est.vercel.app/)
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/gu7oARoHctL9rCua584LqA/Coffee-Delivery-•-Desafio-React-(Copy)?type=design&node-id=0-1&mode=design&t=8pc8qwhrmTMkZNXF-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
