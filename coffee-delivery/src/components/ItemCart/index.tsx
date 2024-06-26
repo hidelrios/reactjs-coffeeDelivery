@@ -9,6 +9,7 @@ import {
 import { QuantityInput } from "../QuantityInput";
 import { ItemRemove } from "../ItemRemove";
 import { useCart } from "../../hooks/useCart";
+import { priceFormatted } from "../../pages/Checkout/checkout";
 
 type Props = {
   coffee: {
@@ -54,7 +55,7 @@ export function ItemCart({coffee}: Props) {
         </Actions>
       </Content>
       <ContentPrice>
-        <Price> R$ {coffee.price}</Price>
+        <Price> {priceFormatted(coffee.price)}</Price>
       </ContentPrice>
     </Container>
   );

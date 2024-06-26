@@ -1,6 +1,6 @@
 import { IconItem } from "../../components/IconItem";
 import { Container, Info } from "./styles";
-import imgSuccess from "../../../public/static/images/success.svg";
+import imgSuccess from "/static/images/success.svg";
 import { useParams } from 'react-router-dom'
 import { useCart } from "../../hooks/useCart";
 export function Success() {

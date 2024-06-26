@@ -17,7 +17,7 @@ export function Header() {
       <Actions>
         <Location>
           <MapPin size={22} weight="fill" color={theme.color["purple"]} />
-          <span>Porto Alegre, RS</span>
+          <span>Timon, Ma</span>
         </Location>
         <Cart>
           <Link to={`checkout`} aria-disabled={cart.length === 0}>

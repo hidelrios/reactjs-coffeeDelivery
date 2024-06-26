@@ -1,19 +1,19 @@
 import { ShoppingCart } from "@phosphor-icons/react";
 import {
   Cart,
-  Coin,
   Container,
   ContentCart,
   ContentCoffee,
   ContentInfo,
   Description,
   Price,
+  Tag,
   Title,
 } from "./styles";
 import { theme } from "../../styles/theme/theme";
 import { QuantityInput } from "../QuantityInput";
 import { useEffect, useState } from "react";
-import {useCart}  from "../../hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 type Props = {
   coffee: {
@@ -48,21 +48,26 @@ export function CardCoffee({ coffee }: Props) {
     console.log("added");
   }
 
+  const priceFormatted = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(coffee.price);
+
   useEffect(() => {
-    let timeout: number
+    let timeout: number;
 
     if (isItemAdded) {
       timeout = setTimeout(() => {
-        setIsItemAdded(false)
-      }, 1000)
+        setIsItemAdded(false);
+      }, 1000);
     }
 
     return () => {
       if (timeout) {
-        clearTimeout(timeout)
+        clearTimeout(timeout);
       }
-    }
-  }, [isItemAdded])
+    };
+  }, [isItemAdded]);
 
   return (
     <Container>
@@ -71,12 +76,15 @@ export function CardCoffee({ coffee }: Props) {
       </ContentCoffee>
       <ContentInfo>
         <Title>{coffee.title}</Title>
+        <div>
+          {coffee.tags.map((coffee) => (
+            <Tag>{coffee}</Tag>
+          ))}
+        </div>
         <Description>{coffee.description}</Description>
       </ContentInfo>
       <ContentCart>
-        <Price>
-          <Coin>R$</Coin> {coffee.price}{" "}
-        </Price>
+        <Price>{priceFormatted}</Price>
         <QuantityInput
           quantity={quantity}
           incrementQuantity={incrementQuantity}

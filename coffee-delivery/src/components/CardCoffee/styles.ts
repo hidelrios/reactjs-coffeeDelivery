@@ -22,6 +22,12 @@ export const ContentInfo = styled.div`
   text-align: center;
   margin: 0.5rem;
   gap: 0.5rem;
+
+  div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
 `;
 
 export const Title = styled.span`
@@ -45,31 +51,13 @@ export const ContentCart = styled.div`
   gap: 0.5rem;
 `;
 
-export const Coin = styled.span`
-  font-family: ${(props) => props.theme.font["font-family"]["roboto"]};
-  font-size: ${(props) => props.theme.font["font-size"]["textS"]};
-  color: ${(props) => props.theme.color["base-label"]};
-`;
-
 export const Price = styled.span`
   font-family: ${(props) => props.theme.font["font-family"]["baloo"]};
-  font-size: ${(props) => props.theme.font["font-size"]["titleL"]};
-  color: ${(props) => props.theme.color["base-subtitle"]};
-  font-weight: 700;
+  font-size: ${(props) => props.theme.font["font-size"]["titleM"]};
+  color: ${(props) => props.theme.color["base-text"]};
+  font-weight: 800;
+  line-height: 1.3;
 `;
-
-// export const Counter = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: center;
-//   width: 72px;
-//   height: 38px;
-//   padding: 4px;
-//   gap: 4px;
-//   border-radius: 6px;
-//   background-color: ${(props) => props.theme.color["base-button"]};
-// `;
 
 export const Cart = styled.button`
   display: flex;
@@ -82,4 +70,16 @@ export const Cart = styled.button`
   border-radius: 6px;
   border: 0;
   background-color: ${(props) => props.theme.color["purple-dark"]};
+`;
+
+export const Tag = styled.span`
+  font-family: ${(props) => props.theme.font["font-family"]["roboto"]};
+  font-size: ${(props) => props.theme.font["font-size"]["tag"]};
+  font-weight: 700;
+  line-height: 1.3;
+  color: ${(props) => props.theme.color["yellow-dark"]};
+  background-color: ${(props) => props.theme.color["yellow-light"]};
+  padding: 4px 8px;
+  border-radius: 100px;
+  text-transform: uppercase;
 `;

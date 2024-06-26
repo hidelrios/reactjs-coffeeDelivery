@@ -66,7 +66,15 @@ const newOrder = z.object({
 
 export type OrderInfo = z.infer<typeof newOrder>;
 
+export function priceFormatted(value: number) {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(value);
+}
+
 const shippingPrice = 3.5;
+
 
 export function Checkout() {
   const {
@@ -83,6 +91,7 @@ export function Checkout() {
     checkout,
   } = useCart();
 
+
   const selectedPaymentMethod = watch('paymentMethod')
 
   const coffeesInCart = cart.map((item) => {
@@ -97,6 +106,7 @@ export function Checkout() {
       quantity: item.quantity,
     };
   });
+  
 
   const totalItemsPrice = coffeesInCart.reduce((previousValue, currentItem) => {
     return (previousValue += currentItem.price * currentItem.quantity);
@@ -229,16 +239,16 @@ export function Checkout() {
             <ContentFrame>
               <ContentValues>
                 <ContentSpanDescription>Total Itens</ContentSpanDescription>
-                <ContentSpanValue>R$ {totalItemsPrice}</ContentSpanValue>
+                <ContentSpanValue>{priceFormatted(totalItemsPrice)}</ContentSpanValue>
               </ContentValues>
               <ContentValues>
                 <ContentSpanDescription>Entrega</ContentSpanDescription>
-                <ContentSpanValue>R$ {shippingPrice}</ContentSpanValue>
+                <ContentSpanValue>{priceFormatted(shippingPrice)}</ContentSpanValue>
               </ContentValues>
               <ContentValues>
                 <ContentSpanTotal>Total</ContentSpanTotal>
                 <ContentSpanTotal>
-                  R$ {totalItemsPrice + shippingPrice}
+                  {priceFormatted(totalItemsPrice + shippingPrice)}
                 </ContentSpanTotal>
               </ContentValues>
             </ContentFrame>
